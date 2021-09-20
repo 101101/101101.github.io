@@ -10,6 +10,23 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script
+		    src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js"
+		    type="text/javascript">
+		</script>
+		<script>
+		    window.DD_RUM && window.DD_RUM.init({
+			applicationId: 'b445dfb1-b980-4c6d-94c5-518318421ee9',
+			clientToken: 'pub86bf42356ca170d2b854b6926d1c2a9f',
+			site: 'datadoghq.com',
+			service:'101101',
+			env:'prod',
+			// Specify a version number to identify the deployed version of your application in Datadog 
+			// version: '1.0.0',
+			sampleRate: 100,
+			trackInteractions: true
+		    });
+		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
